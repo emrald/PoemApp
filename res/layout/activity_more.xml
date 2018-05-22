@@ -1,0 +1,941 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/relbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/admob" />
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/more_scrollview_otherapp"
+        android:layout_above="@id/relbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/more_tv_other_apps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Other Apps"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/more_rel_apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_tv_other_apps"
+                android:background="@drawable/my_shape" >
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_spiderquote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_spiderquote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/spiderquotes" />
+
+                    <Button
+                        android:id="@+id/more_btn_spiderquote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_spiderquote"
+                        android:layout_toRightOf="@+id/more_iv_spiderquote"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Spider Quotes"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_spiderquote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_spiderquote"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_spiderquote"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_vivekanand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_spiderquote"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_vivekanand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/swamivivekanand" />
+
+                    <Button
+                        android:id="@+id/more_btn_vivekanand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_vivekanand"
+                        android:layout_toRightOf="@+id/more_iv_vivekanand"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Swami Vivekananda Thoughts"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_vivekanand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_vivekanand"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_vivekanand"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_flashlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_vivekanand"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_flashlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/flashlight" />
+
+                    <Button
+                        android:id="@+id/more_btn_flashlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_flashlight"
+                        android:layout_toRightOf="@+id/more_iv_flashlight"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Flash Light"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_flashlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_flashlight"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_flashlight"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_filemanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_flashlight"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_filemanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/filemanager" />
+
+                    <Button
+                        android:id="@+id/more_btn_filemanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_filemanager"
+                        android:layout_toRightOf="@+id/more_iv_filemanager"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="File Manager Advance"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_filemanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_filemanager"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_filemanager"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_taskmanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_filemanager"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_taskmanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/taskmanager" />
+
+                    <Button
+                        android:id="@+id/more_btn_taskmanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_taskmanager"
+                        android:layout_toRightOf="@+id/more_iv_taskmanager"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Task Manager Free"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_taskmanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_taskmanager"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_taskmanager"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_lovelivewallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_taskmanager"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_lovelivewallpaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/lovewallpaper" />
+
+                    <Button
+                        android:id="@+id/more_btn_lovelivewallpaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_lovelivewallpaper"
+                        android:layout_toRightOf="@+id/more_iv_lovelivewallpaper"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Love Live Wallpaper"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_lovelivewallpaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_lovelivewallpaper"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_lovelivewallpaper"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_chanakya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_lovelivewallpaper"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_chanakya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/chanakya" />
+
+                    <Button
+                        android:id="@+id/more_btn_chanakya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_chanakya"
+                        android:layout_toRightOf="@+id/more_iv_chanakya"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Chanakya Thoughts Lite"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_chanakya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_chanakya"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_chanakya"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_aristotle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_chanakya"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_aristotle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/aristotle" />
+
+                    <Button
+                        android:id="@+id/more_btn_aristotle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_aristotle"
+                        android:layout_toRightOf="@+id/more_iv_aristotle"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Aristotle Thoughts Lite"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_aristotle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_aristotle"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_aristotle"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_buddha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_aristotle"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_buddha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/gautambuddha" />
+
+                    <Button
+                        android:id="@+id/more_btn_buddha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_buddha"
+                        android:layout_toRightOf="@+id/more_iv_buddha"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Thoughts of Gautama Buddha"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_buddha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/more_line_buddha"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_buddha"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_abrahamlincoln"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_buddha"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_abrahamlincoln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/abraham" />
+
+                    <Button
+                        android:id="@+id/more_btn_abrahamlincoln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_abrahamlincoln"
+                        android:layout_toRightOf="@+id/more_iv_abrahamlincoln"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Abraham Lincoln Thoughts"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_abrahamlincoln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/more_line_abrahamlincoln"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_abrahamlincoln"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_gandhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_abrahamlincoln"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_gandhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/gandhiji" />
+
+                    <Button
+                        android:id="@+id/more_btn_gandhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_gandhi"
+                        android:layout_toRightOf="@+id/more_iv_gandhi"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Mahatama Gandhi’s Thoughts"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_gandhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/more_line_gandhi"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_gandhi"
+                    android:layout_marginTop="2dip" />
+                <RelativeLayout
+                    android:id="@+id/more_rel_bhagavadgita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_gandhi"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_bhagavadgita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/bhagvadgita" />
+
+                    <Button
+                        android:id="@+id/more_btn_bhagavadgita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_bhagavadgita"
+                        android:layout_toRightOf="@+id/more_iv_bhagavadgita"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Bhagavad Gita"
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_bhagavadgita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/more_line_bhagavadgita"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_bhagavadgita"
+                    android:layout_marginTop="2dip" />
+                <RelativeLayout
+                    android:id="@+id/more_rel_jesuschrist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_bhagavadgita"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_jesuschrist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/jesus" />
+
+                    <Button
+                        android:id="@+id/more_btn_jesuschrist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerro_jesuschrist"
+                        android:layout_toRightOf="@+id/more_iv_jesuschrist"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Jesus Christ Thoughts "
+                        android:textColor="#656565"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerro_jesuschrist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+                
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/more_tv_share"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_rel_apps"
+                android:layout_marginTop="10dp"
+                android:text="Share"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/more_rel_mainshare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_tv_share"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/my_shape" >
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:src="@drawable/icon_facebook" />
+
+                    <Button
+                        android:id="@+id/more_btn_btnfacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerrofacebook"
+                        android:layout_toRightOf="@+id/more_iv_facebook"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Facebook"
+                        android:textColor="#656565"
+                        android:textSize="14dip"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerrofacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_facebook"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/more_rel_facebook"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/more_line_facebook"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/icon_twitter" />
+
+                    <Button
+                        android:id="@+id/more_btn_btntwitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerroTwitter"
+                        android:layout_toRightOf="@+id/more_iv_twitter"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Twitter"
+                        android:textColor="#656565"
+                        android:textSize="14dip"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerroTwitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_email"
+                    style="@style/horizontal_line_style"
+                    android:layout_height="2dip"
+                    android:layout_below="@id/more_rel_twitter"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line_email"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/icon_email" />
+
+                    <Button
+                        android:id="@+id/more_btn_btnmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerroemail"
+                        android:layout_toRightOf="@id/more_iv_mail"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Email"
+                        android:textColor="#656565"
+                        android:textSize="14dip"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerroemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/more_line_ratethisApp"
+                    style="@style/horizontal_line_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_below="@id/more_rel_email"
+                    android:layout_marginTop="2dip" />
+
+                <RelativeLayout
+                    android:id="@+id/more_rel_twitter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/more_line_ratethisApp"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/more_iv_rate_this_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/icon_rate_this_app" />
+
+                    <Button
+                        android:id="@+id/more_btn_rateapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_toLeftOf="@+id/more_iv_aerrorateapp"
+                        android:layout_toRightOf="@+id/more_iv_rate_this_app"
+                        android:background="@drawable/empty"
+                        android:gravity="left"
+                        android:text="Rate This App"
+                        android:textColor="#656565"
+                        android:textSize="14dip"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/more_iv_aerrorateapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left|center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:baselineAligned="false"
+	android:descendantFocusability="blocksDescendants"
+	android:paddingBottom="7dp"
+	android:background="@color/tabTransparent"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/list_tab"
+	>
+        <TextView
+            android:id="@+id/row_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="2"
+            android:textColor="#a62668"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/row_iv_arrow"
+          android:gravity="left"
+		/>
+
+         <ImageButton
+            android:id="@+id/row_iv_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="             "
+	    android:background="@color/tabTransparent"
+            /> 
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/list_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top" >
+
+        <TextView
+            android:id="@+id/listmain_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Love Poem"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/list_btn_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/grid_view"
+            android:gravity="right" >
+        </Button>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_lv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relbottom"
+        android:layout_below="@id/list_topLayout"
+        android:cacheColorHint="@color/tabTransparent"
+         android:divider="@null"
+		android:dividerHeight="0dp"
+        android:listSelector="@color/tabTransparent"
+         >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+        <include layout="@layout/admob" />
+    </RelativeLayout>
+
+</RelativeLayout>

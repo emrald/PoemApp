@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+    
+	 <RelativeLayout
+        android:id="@+id/fav_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top" >
+        <TextView
+            android:id="@+id/fav_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Favorite"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/fav_btn_editdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pink_back"
+            android:text="Edit"
+            android:textColor="#FFF" 
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+             />
+        
+    </RelativeLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_below="@id/fav_topLayout"
+        android:layout_above="@+id/relbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:divider="@null"
+		android:dividerHeight="0dp"
+        android:listSelector="@color/tabTransparent"/>
+    <RelativeLayout
+        android:id="@+id/relbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/admob" />
+    </RelativeLayout>
+</RelativeLayout>

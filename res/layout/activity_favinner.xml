@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background" >
+
+   <RelativeLayout
+        android:id="@+id/favinner_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top" >
+
+        <TextView
+            android:id="@+id/favinner_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Favorite"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+               
+        <Button
+            android:id="@+id/favinner_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back" />
+        
+    </RelativeLayout>
+   
+   <ScrollView
+        android:id="@+id/favinner_rel_content"
+        android:layout_above="@+id/relbottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/favinner_topLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent_shape"
+        android:gravity="center_horizontal"
+	>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/favinner_tv_quote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                  android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:textColor="#a62668"
+                android:textSize="25sp"
+                 />
+        </LinearLayout>
+    </ScrollView>
+	<!-- <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/favinner_rel_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="10dp" 
+	>
+	    <Button
+	        android:id="@+id/favinner_btn_sendSMS"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/sendsms"
+	         
+		/>
+	    <Button
+	        android:id="@+id/favinner_btn_shar"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/share"
+	        android:layout_marginLeft="5dp"
+		/>
+	</LinearLayout> -->
+	<RelativeLayout
+        android:id="@+id/relbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/admob" />
+    </RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/relbottom"
+	    android:layout_centerHorizontal="true" >
+
+	    <Button
+	        android:id="@+id/favinner_btn_sendSMS"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/sendsms" />
+
+	    <Button
+	        android:id="@+id/favinner_btn_shar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/facebook" />
+
+	    <Button
+	        android:id="@+id/favinner_btn_shar1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/twitter" />
+	</LinearLayout>
+
+</RelativeLayout>
